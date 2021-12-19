@@ -7,15 +7,26 @@ console.log('Sample JavaScript HW#1');
  */
 
 // имя переменной: myNum, значение: 10
+var myNum = 10;
 
 // имя переменной: myStr, значение: 'строка'
+var myStr = 'строка';
 
 // имя переменной: myBool, значение: true
+var myBool = true;
 
 // имя переменной: myArr, значения: 1, 2, 3, 4, 5
+var myArr = [1, 2, 3, 4, 5];
 
 // имя переменной myObj, значения: first: 'First Name', last: 'Last Name'
+var myObj = {first: 'First Name', last: 'Last Name'};
 
+
+console.log(myNum);
+console.log(myStr);
+console.log(myBool);
+console.log(myArr);
+console.log(myObj);
 /*
  * #2
  *
@@ -25,6 +36,7 @@ console.log('Sample JavaScript HW#1');
  */
 
 // decimal2
+var decimal2 = myNum.toFixed(2);
 
 /*
  * #3
@@ -35,6 +47,15 @@ console.log('Sample JavaScript HW#1');
  */
 
 // i
+var i = 10;
+// возвращаем знчение 11
+console.log('префиксный инкремент"', ++i);
+// возвращаем знчение 11 и добавляем 1
+console.log('постфиксный инкремент', i++);
+// возвращаем знчение 12 и отнимаем 1
+console.log('префиксный декремент', i--);
+// возвращаем знчение 10
+console.log('постфиксный декремент', --i);
 
 /*
  * #4
@@ -46,17 +67,24 @@ console.log('Sample JavaScript HW#1');
  */
 
 // myTest
+var myTest = 20;
 
 // +=
+myTest += myNum;
+console.log(myTest);
 
 // –=
-
+myTest -= 20;
+console.log(myTest);
 // *=
-
+myTest *= myTest;
+console.log(myTest);
 // /=
-
+myTest /= 2;
+console.log(myTest);
 // %=
-
+myTest %= 3;
+console.log(myTest);
 /*
  * #5
  *
@@ -65,11 +93,20 @@ console.log('Sample JavaScript HW#1');
 
 // константа Pi → myPi
 
+const myPi = Math.PI;
+console.log(myPi);
+
 // округленное значение числа 89.279 → myRound
+const myRound = Math.round(89.279);
+console.log(myRound);
 
 // случайное число между 0..10 → myRandom
+const myRandom = Math.random() * 10;
+console.log(myRandom);
 
 // 3 в 5 степени → myPow
+const myPow = Math.pow(3,5);
+console.log(myPow);
 
 /*
  * #6
