@@ -93,19 +93,19 @@ console.log(myTest);
 
 // константа Pi → myPi
 
-const myPi = Math.PI;
+var myPi = Math.PI;
 console.log(myPi);
 
 // округленное значение числа 89.279 → myRound
-const myRound = Math.round(89.279);
+var myRound = Math.round(89.279);
 console.log(myRound);
 
 // случайное число между 0..10 → myRandom
-const myRandom = Math.random() * 10;
+var myRandom = Math.random() * 10;
 console.log(myRandom);
 
 // 3 в 5 степени → myPow
-const myPow = Math.pow(3,5);
+var myPow = Math.pow(3,5);
 console.log(myPow);
 
 /*
@@ -114,10 +114,11 @@ console.log(myPow);
  * Создайте объект с именем strObj.
  * Присвойте ключу str строку текста "Мама мыла раму, рама мыла маму", ключу length установите длину этой строки.
  */
-
 // Мама мыла раму, рама мыла маму
-
+var strObj = {str: 'Мама мыла раму, рама мыла маму'};
+strObj.length = strObj.str.length;
 // strObj
+console.log(strObj);
 
 /*
  * #7
@@ -125,9 +126,9 @@ console.log(myPow);
  * Проверьте наличие текста 'рама' в поле str объекта strObj (см.п.6),
  * результат сохраните в переменную isRamaPos и выведите ее в консоль.
  */
-
 // isRamaPos
-
+var isRamaPos = strObj.str.indexOf('рама');
+console.log(isRamaPos);
 /*
  * #8
  *
@@ -138,9 +139,13 @@ console.log(myPow);
  */
 
 // strReplace
-
+var strReplace = strObj.str.replace('мыла', 'моет');
+strReplace = strReplace.replace('рама мыла', 'Рама держит');
+console.log(strReplace);
 /*
  * #9
  *
  * Преобразуйте любую строку в верхний, затем в нижний регистры, результат отобразите в консоли.
  */
+console.log(strReplace.toUpperCase());
+console.log(strReplace.toLowerCase());
